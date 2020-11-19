@@ -222,7 +222,7 @@ pushconf(){
     cp -r ~/.config/nitrogen /var/tmp/configs_push/config/.config/
     cp -r ~/.config/nvim /var/tmp/configs_push/config/.config/
     cp -r /usr/share/backgrounds /var/tmp/configs_push/config/
-
+    cp -r ~/.config/scripts/install.sh /var/tmp/configs_push/config/
 
     rm /var/tmp/configs_push/config/packages.txt
     pacman -Qe >> /var/tmp/configs_push/config/packages.txt
