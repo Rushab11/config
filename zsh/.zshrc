@@ -218,7 +218,7 @@ pushconf(){
     cp -r ~/.config/alacritty /var/tmp/configs_push/config/.config/
     cp -r ~/.config/nvim /var/tmp/configs_push/config/.config/
     cp -r ~/.config/vifm /var/tmp/configs_push/config/.config/
-    cp -r ~/.config/fontconfig /var/tmp/configs_push/config/.config/
+    cp -r /usr/share/fonts /var/tmp/configs_push/config/
     cp -r ~/.config/nitrogen /var/tmp/configs_push/config/.config/
     cp -r ~/.config/nvim /var/tmp/configs_push/config/.config/
     cp -r /usr/share/backgrounds /var/tmp/configs_push/config/
