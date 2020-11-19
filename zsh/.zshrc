@@ -124,7 +124,7 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 alias py="python3.8"
-
+alias pushconf="./pushconfigs.sh"
 alias vim="nvim"
 alias vi="nvim"
 alias v="nvim"
@@ -192,46 +192,6 @@ conf(){
     fi
 }
 
-pushconf(){
-    if [ -d "/var/tmp/configs_push/config" ]
-    then
-        cd /var/tmp/configs_push/config/ && git pull
-    else
-        take /var/tmp/configs_push/ && git clone https://github.com/Rushab11/config.git
-    fi
-
-    cd /var/tmp/configs_push/config/
-
-    mkdir -p /var/tmp/configs_push/config/zsh/
-    mkdir -p /var/tmp/configs_push/config/
-    mkdir -p /var/tmp/configs_push/config/
-    mkdir -p /var/tmp/configs_push/config/.config/
-    mkdir -p /var/tmp/configs_push/config/backgrounds/
-    mkdir -p /var/tmp/configs_push/config/fonts/
-
-
-    cp -r ~/.zshrc /var/tmp/configs_push/config/zsh/
-    cp -r ~/.xmonad /var/tmp/configs_push/config/
-    cp -r ~/.xprofile /var/tmp/configs_push/config/
-    cp -r ~/.xinitrc /var/tmp/configs_push/config/
-    cp -r ~/.config/xmobar /var/tmp/configs_push/config/.config/
-    cp -r ~/.config/alacritty /var/tmp/configs_push/config/.config/
-    cp -r ~/.config/nvim /var/tmp/configs_push/config/.config/
-    cp -r ~/.config/vifm /var/tmp/configs_push/config/.config/
-    cp -r /usr/share/fonts /var/tmp/configs_push/config/
-    cp -r ~/.config/nitrogen /var/tmp/configs_push/config/.config/
-    cp -r ~/.config/nvim /var/tmp/configs_push/config/.config/
-    cp -r /usr/share/backgrounds /var/tmp/configs_push/config/
-    cp -r ~/.config/scripts/install.sh /var/tmp/configs_push/config/
-
-    rm /var/tmp/configs_push/config/packages.txt
-    pacman -Qe >> /var/tmp/configs_push/config/packages.txt
-
-    git add .
-    git commit -m "Update: Auto-Update Daemon [$(date '+%d/%m/%Y %H:%M:%S')]"
-    git push
-    cd ~
-}
 
 musicd()
 {
