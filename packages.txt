@@ -48,11 +48,14 @@ os-prober 1.77-2
 pacman-contrib 1.4.0-1
 patch 2.7.6-8
 pavucontrol 1:4.0-2
+pgadmin4 4.28-2
 picom 8.2-1
 pkgconf 1.7.3-1
+postgresql 12.5-4
 powerline-fonts 2.8.1-2
 pulseaudio 14.0-1
 python-pip 20.2.1-1
+redis 6.0.9-1
 rhythmbox 3.4.4-2
 ripgrep 12.1.1-1
 rofi 1.6.1-1

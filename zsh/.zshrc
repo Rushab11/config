@@ -9,7 +9,7 @@ if [[ -n $VIRTUAL_ENV && -e "${VIRTUAL_ENV}/bin/activate" ]]; then
 fi
 
 export QT_QPA_PLATFORMTHEME="qt5ct"
-
+export BROWSER="/usr/bin/brave"
 export EDITOR="nvim"
 export VISUAL="nvim"
 export TERM="alacritty"
