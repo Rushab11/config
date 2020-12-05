@@ -27,7 +27,7 @@ Config { font    = "xft:Ubuntu:weight=bold:pixelsize=11:antialias=true:hinting=t
                                        -- charged status
                                        , "-i"	, "<fc=#51afef>Charged</fc> (<left>%)"
                              ] 50
-                    , Run Com "/home/daze/.local/bin/pacupdate" [] "pacupdate" 36000
+                    , Run Com "/home/rushab/.local/bin/pacupdate" [] "pacupdate" 36000
                     , Run UnsafeStdinReader
                     ]
        , sepChar = "%"

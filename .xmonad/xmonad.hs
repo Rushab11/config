@@ -583,6 +583,7 @@ myKeys =
 main :: IO ()
 main = do
     xmproc0 <- spawnPipe "xmobar -x 0 /home/rushab/.config/xmobar/xmobarrc1"
+    xmproc1 <- spawnPipe "xmobar -x 1 /home/rushab/.config/xmobar/xmobarrc"
     xmonad $ ewmh def
         { manageHook = ( isFullscreen --> doFullFloat ) <+> myManageHook <+> manageDocks
         -- Run xmonad commands from command line with "xmonadctl command". Commands include:

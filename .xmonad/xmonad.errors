@@ -1,7 +1,0 @@
-
-xmonad.hs:605:77: error:
-    • Variable not in scope: xmproc1 :: GHC.IO.Handle.Types.Handle
-    • Perhaps you meant ‘xmproc0’ (line 585)
-    |
-605 |                         { ppOutput = \x -> hPutStrLn xmproc0 x >> hPutStrLn xmproc1 x
-    |                                                                             ^^^^^^^
