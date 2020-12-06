@@ -311,10 +311,19 @@ function! ChooseTerm(termname, slider)
 endfunction
 
 "----------------------------vim-buffet-------------------------------------------
+function! g:BuffetSetCustomColors()
+	hi! BuffetCurrentBuffer cterm=NONE ctermbg=106 ctermfg=8 guibg=#98C379 guifg=#282C34
+	hi! BuffetTrunc cterm=bold ctermbg=66 ctermfg=8 guibg=#E06C75 guifg=#282C34
+	hi! BuffetBuffer cterm=NONE ctermbg=239 ctermfg=8 guibg=#282C34 guifg=#FFFFFF
+	hi! BuffetTab cterm=NONE ctermbg=66 ctermfg=8 guibg=#E06C75 guifg=#282C34
+	hi! BuffetActiveBuffer cterm=NONE ctermbg=10 ctermfg=239 guibg=#999999 guifg=#504945
+endfunction
+
 let g:buffet_powerline_separators = 1
-let g:buffet_tab_icon = "\uf00a"
+let g:buffet_tab_icon = ""
 let g:buffet_left_trunc_icon = "\uf0a8"
 let g:buffet_right_trunc_icon = "\uf0a9"
+
 nmap <leader>1 <Plug>BuffetSwitch(1)
 nmap <leader>2 <Plug>BuffetSwitch(2)
 nmap <leader>3 <Plug>BuffetSwitch(3)
