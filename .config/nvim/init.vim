@@ -40,6 +40,7 @@ call plug#begin('~/.vim/plugged')
 
 "CUSTOM"
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'bagrat/vim-buffet'
 Plug 'jiangmiao/auto-pairs'
 Plug 'joshdick/onedark.vim'
 Plug 'preservim/nerdcommenter'
@@ -249,7 +250,6 @@ nmap <leader>g] <Plug>(coc-diagnostic-next)
 nmap <silent> <leader>gp <Plug>(coc-diagnostic-prev-error)
 nmap <silent> <leader>gn <Plug>(coc-diagnostic-next-error)
 nnoremap <leader>cr :CocRestart
-
 "-----------------------------  FuGITive  ----------------------------------------
 " IMPORTANTE:  Los comandos comienzan con ; porque Fugitive tiene problemas debido
 " al cambio de : y ;. Los otros mapeos no tienen drama, no se porque
@@ -309,6 +309,22 @@ function! ChooseTerm(termname, slider)
 		:exe "f " a:termname
 	endif
 endfunction
+
+"----------------------------vim-buffet-------------------------------------------
+let g:buffet_powerline_separators = 1
+let g:buffet_tab_icon = "\uf00a"
+let g:buffet_left_trunc_icon = "\uf0a8"
+let g:buffet_right_trunc_icon = "\uf0a9"
+nmap <leader>1 <Plug>BuffetSwitch(1)
+nmap <leader>2 <Plug>BuffetSwitch(2)
+nmap <leader>3 <Plug>BuffetSwitch(3)
+nmap <leader>4 <Plug>BuffetSwitch(4)
+nmap <leader>5 <Plug>BuffetSwitch(5)
+nmap <leader>6 <Plug>BuffetSwitch(6)
+nmap <leader>7 <Plug>BuffetSwitch(7)
+nmap <leader>8 <Plug>BuffetSwitch(8)
+nmap <leader>9 <Plug>BuffetSwitch(9)
+nmap <leader>0 <Plug>BuffetSwitch(10)
 
 "----------------------------- COMENTARIOS ----------------------------------------
 noremap <leader>/ :Commentary<cr>

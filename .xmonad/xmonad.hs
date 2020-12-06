@@ -93,7 +93,7 @@ myBorderWidth :: Dimension
 myBorderWidth = 1         -- Sets border width for windows
 
 myNormColor :: String
-myNormColor   = "#282c34"  -- Border color of normal windows
+myNormColor   = "#424a59"  -- Border color of normal windows
 
 myFocusColor :: String
 myFocusColor  = "#bbc5ff"  -- Border color of focused windows
