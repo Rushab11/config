@@ -323,6 +323,7 @@ let g:buffet_powerline_separators = 1
 let g:buffet_tab_icon = ""
 let g:buffet_left_trunc_icon = "\uf0a8"
 let g:buffet_right_trunc_icon = "\uf0a9"
+let g:buffet_always_show_tabline = 0
 
 nmap <leader>1 <Plug>BuffetSwitch(1)
 nmap <leader>2 <Plug>BuffetSwitch(2)

@@ -329,8 +329,8 @@ myScratchPads = [ NS "terminal" spawnTerm findTerm manageTerm
                  w = 0.9
                  t = 0.95 -h
                  l = 0.95 -w
-    spawnMusic = "rhythmbox"
-    findMusic = className=? "Rhythmbox"
+    spawnMusic = "spotify"
+    findMusic = className=? "Spotify"
     manageMusic = customFloating $ W.RationalRect l t w h
                where
                  h = 0.9
@@ -548,7 +548,7 @@ myKeys =
         , ("M-S-<KP_Add>", shiftTo Next nonNSP >> moveTo Next nonNSP)       -- Shifts focused window to next ws
         , ("M-S-<KP_Subtract>", shiftTo Prev nonNSP >> moveTo Prev nonNSP)  -- Shifts focused window to prev ws
 
-    -- Scratchpads
+    -- rcratchpads
         , ("C-<Return>", namedScratchpadAction myScratchPads "terminal")
         , ("M1-t", namedScratchpadAction myScratchPads "telegram")
         , ("M1-m", namedScratchpadAction myScratchPads "music")

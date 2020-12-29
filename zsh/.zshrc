@@ -123,7 +123,7 @@ export LC_CTYPE=UTF-8
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-alias py="python3.8"
+alias py="python3"
 alias vim="nvim"
 alias vi="nvim"
 alias v="nvim"
